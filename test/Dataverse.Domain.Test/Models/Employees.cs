@@ -11,7 +11,8 @@ namespace Dataverse.Domain.Test.Models
         [Text("crmit_Name", "crmit_name")]
         public string? Name { get; set; }
 
-        [Text("crmit_EmployeeNumber", "crmit_employeenumber")]
+        // ReadOnly column
+        [Text("crmit_EmployeeNumber", "crmit_employeenumber", true)]
         public string? EmployeeNumber { get; set; }
 
         [DateTimeOf("CreatedOn", "createdon")]
